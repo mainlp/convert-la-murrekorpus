@@ -217,12 +217,11 @@ if __name__ == "__main__":
     parser.add_argument("--infiles",
                         default="LA-murre-vrt/lam_*.vrt")
     parser.add_argument("--outdir", default=".")
-    parser.add_argument("--group_by", help="See bottom of README file.",
-                        choices=["group", "eight", "region"
+    parser.add_argument("--groupby", help="See bottom of README file.",
+                        choices=["group", "eight", "region",
                                  "two", "no_groups"])
     parser.add_argument("--dev", default="",
                         help="classes that should have 'dev' in their output "
                              "filename instead of 'test' (comma-separated)")
     args = parser.parse_args()
-    murre(glob("../datasets/LA-murre-vrt/lam_*.vrt"),
-          "../datasets/")
+    murre(glob(args.infiles), args.outdir, args.groupby, args.dev)
