@@ -10,7 +10,7 @@ wget https://korp.csc.fi/download/la-murre/vrt/la-murre-vrt.zip
 unzip la-murre-vrt.zip
 rm la-murre-vrt.zip
 
-python3 convert.py --infiles "LA-murre-vrt/lam_*.vrt" --outdir "." --groupby "region"
+python3 convert.py --infiles "LA-murre-vrt/lam_*.vrt --outdir "." --groupby "region"
 ```
 
 This results in one or more TSV files where each line contains a word form and its POS tag, and sentence boundaries are indicated through empty lines.

@@ -224,4 +224,5 @@ if __name__ == "__main__":
                         help="classes that should have 'dev' in their output "
                              "filename instead of 'test' (comma-separated)")
     args = parser.parse_args()
-    murre(glob(args.infiles), args.outdir, args.groupby, args.dev)
+    murre(glob(args.infiles), args.outdir, args.groupby,
+          (s.strip() for s in args.dev.split(",")))
