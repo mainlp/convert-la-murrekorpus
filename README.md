@@ -1,7 +1,7 @@
 # POS tag conversion for LA Murre
 
 This script coverts the POS tags of the [*Lauseopin arkiston murrekorpus / Finnish Dialect Corpus of the Syntax Archive*](https://www.kielipankki.fi/aineistot/la-murre/) to the [UPOS](https://universaldependencies.org/u/pos/) tagset.
-It was used for the paper *Does manipulating tokenization aid cross-lingual transfer? A study on POS tagging for non-standardized languages* (Blaschke ea, VarDial 2023, link to come).
+It was used for the paper *Does manipulating tokenization aid cross-lingual transfer? A study on POS tagging for non-standardized languages* (Blaschke ea, VarDial 2023, [link](https://aclanthology.org/2023.vardial-1.5/)).
 
 # Usage
 
